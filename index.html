@@ -25,6 +25,8 @@
 
 
     <style>
+
+    /*pc!!!!!!!!!!*/
     @media (min-width: 451px) {
 
       body {
@@ -114,9 +116,98 @@
 
       }
 
-      @media (max-width: 450px) {
-        body{background-color: blue }
-      }
+      /*mobile!!!!!!*/
+
+      @media (max-width: 451px) {
+
+        body {
+        background-color: blue;
+              width: 100%;
+              font-size: 100%;
+        }
+        .corsivo {
+         font-family: HappyTimesItalic;
+         font-size: 2.25em;
+         text-align: center;
+         line-height: 2.25em;
+        }
+        .tondo {
+         font-family: HappyTimes;
+         font-size: 2.25em;
+         text-align: center;
+         line-height: 1.75em;
+        }
+        .angolosix {
+         font-family: HappyTimesBold;
+         font-size: 1.75em;
+         text-align: left;
+        }
+        .angolosixitalic {
+         font-family: HappyTimesItalic;
+         font-size: 1.75em;
+         text-align: left;
+         line-height: 2.25em;
+        }
+        .angolodx {
+         font-family: HappyTimesBold;
+         font-size: 20px;
+         text-align: right;
+         position: absolute;
+         top:0px;
+         line-height: 15px;
+         margin-left: 99%;
+        }
+        .descreg{
+         font-family: HappyTimes;
+         font-size: 20px;
+         text-align: justify;
+         line-height: 15px;
+         margin-right: 50%;
+        }
+        .descbold{
+         font-family: HappyTimesBold;
+         font-size: 20px;
+         text-align: justify;
+         line-height: 15px;
+         margin-right: 50%;
+         }
+        .descitalic{
+         font-family: HappyTimesItalic;
+         font-size: 20px;
+         text-align: justify;
+         line-height: 15px;
+         margin-right: 50%;
+        }
+
+        .centrato {
+         vertical-align:middle;
+         }
+
+         .overClass {visibility: visible;}
+         .outClass  {visibility: hidden;}
+
+         .app_fondo_on{
+           background-color: white;
+           height: 100%;
+           width: 100%;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+           visibility: visible;
+          }
+          .app_fondo_off{
+            background-color: red;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            visibility: hidden;
+          }
+
+        }
+
+
 
       @font-face {
         font-family:HappyTimes;
