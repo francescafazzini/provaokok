@@ -34,6 +34,12 @@
             width: 100%;
             font-size: 100%;
       }
+      .header{
+        text-align: left;
+        cursor: pointer;
+        background-color:green;
+        border:hidden;
+      }
       .corsivo {
        font-family: HappyTimesItalic;
        font-size: 2.25em;
@@ -46,6 +52,32 @@
        text-align: center;
        line-height: 1.75em;
       }
+      .vicevitatxt{
+        font-family: HappyTimes;
+        font-size: 2.25em;
+        line-height: 1.75em;
+        cursor: pointer;
+        background-color:violet;
+        border:hidden;
+        margin: 0;
+        transform: translate(-50%, 0);
+        position: absolute;
+        left: 50%;
+        cursor: pointer;
+       }
+       .colpevoletxt{
+          font-family: HappyTimes;
+          font-size: 2.25em;
+          line-height: 1.75em;
+          cursor: pointer;
+          background-color:violet;
+          border:hidden;
+          margin: 0;
+          transform: translate(-50%, 0);
+          position: absolute;
+          left: 50%;
+          cursor: pointer;
+        }
       .angolosix {
        font-family: HappyTimesBold;
        font-size: 1.75em;
@@ -113,10 +145,6 @@
           left: 0px;
           visibility: hidden;
         }
-        .header{
-          text-align: left;
-          width:17%
-        }
         .vicevita_imm {
           max-width:30%;
           position:absolute;
@@ -143,18 +171,50 @@
               width: 100%;
               font-size: 100%;
         }
+        .header{
+          text-align: left;
+          cursor: pointer;
+          background-color:green;
+          border:hidden;
+        }
         .corsivo {
          font-family: HappyTimesItalic;
-         font-size: 1.25em;
+         font-size: 2.25em;
          text-align: center;
-         line-height:1.25em;
+         line-height: 1.75em;
         }
         .tondo {
          font-family: HappyTimes;
-         font-size: 1.25em;
+         font-size: 2.25em;
          text-align: center;
-         line-height: 1.25em;
+         line-height: 1.75em;
         }
+        .vicevitatxt{
+          font-family: HappyTimes;
+          font-size: 1.75em;
+          line-height: 1.75em;
+          cursor: pointer;
+          background-color:violet;
+          border:hidden;
+          margin: 0;
+          transform: translate(-50%, 0);
+          position: absolute;
+          left: 50%;
+          cursor: pointer;
+         }
+         .colpevoletxt{
+            font-family: HappyTimes;
+            font-size: 1.75em;
+            line-height: 1.75em;
+            cursor: pointer;
+            background-color:violet;
+            border:hidden;
+            margin: 0;
+            transform: translate(-50%, 0);
+            position: absolute;
+            left: 50%;
+            cursor: pointer;
+          }
         .angolosix {
          font-family: HappyTimesBold;
          font-size: 0.75em;
@@ -164,7 +224,7 @@
          font-family: HappyTimesItalic;
          font-size: 0.75em;
          text-align: left;
-         line-height: 1.25em;
+         line-height: 1.75em;
         }
         .angolodx {
          font-family: HappyTimesBold;
@@ -222,17 +282,19 @@
             left: 0px;
             visibility: hidden;
           }
-          .header{
-            text-align: left;
-            width:30%
-          }
-          .vicevita_imm{
-            height: 0px;
-            width: 0px;
+          .vicevita_imm {
+            max-width:30%;
+            position:absolute;
+            top: 40px;
+            left:300px;
+            z-index: -1
           }
           .colpevole_imm{
-            height: 0px;
-            width: 0px;
+            max-width:35%;
+            position:absolute;
+            top: 125px;
+            left: 1000px;
+            z-index: -1
           }
 
         }
@@ -283,26 +345,27 @@
 
   <!--HEADER-->
 
-    <div id="header" class="header" style="cursor: pointer; background-color:green">
+    <button id="header" class="header" >
       <div id="Francesca" class= "angolosix">
       Francesca Fazzini
       </div>
       <div id="description" class= "angolosixitalic" >
       communication designer
       </div>
-    </div>
+    </button>
 
 
     <!--titoli-->
     <br></br><br></br>
 
-    <div id="vicevitatxt" class= "tondo" style="cursor: pointer;  margin-right: 28%; margin-left: 28%; background-color:violet">
+    <button id="vicevitatxt" class= "vicevitatxt">
       LA VICEVITA, TRENI E VIAGGI IN TRENO
-    </div>
+    </button>
+    <br></br><br></br>
 
-    <div id="colpevoletxt" class= "tondo" style="cursor: pointer;margin-right: 43%; margin-left: 43%; background-color:red">
+    <button id="colpevoletxt" class= "colpevoletxt">
       COLPEVOLE
-    </div>
+    </button>
 
 
     <!-- approfondimenti-->
