@@ -30,27 +30,29 @@
     @media (min-width: 451px) {
 
       body {
-      background-color: yellow;
+    /**  background-color: yellow;**/
             width: 100%;
             font-size: 100%;
       }
       .header{
         text-align: left;
         cursor: pointer;
-        background-color:green;
+
+        background-color:transparent;
         border:hidden;
+
       }
 
       .vicevitatxt{
-        font-family: GarMedI;
+        font-family: GarMed;
         font-size: 3em;
         line-height: 1em;
         cursor: pointer;
-        background-color:violet;
+        background-color:transparent;
         border:hidden;
         margin: 0;
         transform: translate(-50%, 0);
-        position: absolute;
+        position: relative;
         left: 50%;
         cursor: pointer;
        }
@@ -59,11 +61,11 @@
           font-size: 3em;
           line-height: 1em;
           cursor: pointer;
-          background-color:red;
+          background-color:transparent;
           border:hidden;
           margin: 0;
           transform: translate(-50%, 0);
-          position: absolute;
+          position: relative;
           left: 50%;
           cursor: pointer;
         }
@@ -163,7 +165,7 @@
         .header{
           text-align: left;
           cursor: pointer;
-          background-color:green;
+          background-color:transparent;
           border:hidden;
         }
 
@@ -172,11 +174,11 @@
           font-size: 1.5em;
           line-height: 1.5em;
           cursor: pointer;
-          background-color:violet;
+          background-color:transparent;
           border:hidden;
           margin: 0;
           transform: translate(-50%, 0);
-          position: absolute;
+          position: relative;
           left: 50%;
           cursor: pointer;
          }
@@ -185,11 +187,11 @@
             font-size: 1.5em;
             line-height: 1.5em;
             cursor: pointer;
-            background-color:violet;
+            background-color:transparent;
             border:hidden;
             margin: 0;
             transform: translate(-50%, 0);
-            position: absolute;
+            position: relative;
             left: 50%;
             cursor: pointer;
           }
@@ -261,17 +263,17 @@
             visibility: hidden;
           }
           .vicevita_imm {
-            max-width:30%;
+            max-width:0%;
             position:absolute;
-            top: 40px;
-            left:300px;
+            top: 0px;
+            left: 0px;
             z-index: -1
           }
           .colpevole_imm{
-            max-width:35%;
+            max-width:0%;
             position:absolute;
-            top: 125px;
-            left: 1000px;
+            top: 0px;
+            left: 0px;
             z-index: -1
           }
 
@@ -363,15 +365,18 @@
 
     <!--titoli-->
     <br></br><br></br>
+    <div>
 
     <button id="vicevitatxt" class= "vicevitatxt">
       LA VICEVITA, TRENI E VIAGGI IN TRENO
     </button>
-    <br></br><br></br>
+    <br></br>
 
     <button id="colpevoletxt" class= "colpevoletxt">
       COLPEVOLE
     </button>
+
+    </div>
 
 
     <!-- approfondimenti-->
