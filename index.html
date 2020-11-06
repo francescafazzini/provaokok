@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>FRANCESCA FAZZINI</title>
+    <title>Francesca Fazzini</title>
     <link rel="shortcut icon" href="i/icon0.ico"> <!-- icona da cambiare-->
     <link rel="stylesheet" href="css/indexDesktop.css" media="screen and (min-width: 451px)"> <!-- stile pc-->
     <link rel="stylesheet" href="css/indexMobile.css" media="screen and (max-width: 450px)"> <!--stile cell-->
@@ -30,126 +30,90 @@
     @media (min-width: 451px) {
 
       body {
-    /**  background-color: yellow;**/
-            width: 100%;
-            font-size: 100%;
+        font-size: 75%;
+
       }
       .header{
-        text-align: left;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 25px;
         cursor: pointer;
-
-        background-color:transparent;
         border:hidden;
 
-      }
 
-      .vicevitatxt{
-        font-family: GarMed;
-        font-size: 3.5em;
-        line-height: 1em;
+
+      }
+      .box{
+        background-color: transparent;
+        border: 2px solid #000000;
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+      }
+      .indice{
+        font-family:ortica;
+        text-align: left;
+        font-size: 5em;
+        line-height: 1.5em;
         cursor: pointer;
-        background-color:transparent;
+
+        margin-left: 20px;
         border:hidden;
         margin: 0;
         transform: translate(-50%, 0);
         position: relative;
         left: 50%;
-        cursor: pointer;
        }
-       .colpevoletxt{
-          font-family: GarMed;
-          font-size: 3.5em;
-          line-height: 1em;
-          cursor: pointer;
-          background-color: transparent;
-          border:hidden;
-          margin: 0;
-          transform: translate(-50%, 0);
-          position: relative;
-          left: 50%;
-          cursor: pointer;
-        }
+
+
       .angolosix {
-       font-family: GarB;
-       font-size: 2.25em;
-       text-align: left;
+       font-family: sans-serif;
+       font-size: 1.5em;
+       float:left;
+       padding: 0px;
+
+
       }
-      .angolosixitalic {
-       font-family: GarSBI;
-       font-size: 2.25em;
-       text-align: left;
-       line-height: 1.75em;
-      }
-      .angolodx {
-       font-family: HappyTimesBold;
-       font-size: 20px;
+      .about{
+       width: 10%;
        text-align: right;
-       position: absolute;
-       top:0px;
-       line-height: 15px;
-       margin-left: 99%;
+       font-family: sans-serif;
+       font-size: 1.5em;
+       float: right;
+
       }
-      .descreg{
-       font-family: HappyTimes;
-       font-size: 20px;
-       text-align: justify;
-       line-height: 15px;
-       margin-right: 50%;
-      }
-      .descbold{
-       font-family: HappyTimesBold;
-       font-size: 20px;
-       text-align: justify;
-       line-height: 15px;
-       margin-right: 50%;
-       }
-      .descitalic{
-       font-family: HappyTimesItalic;
-       font-size: 20px;
-       text-align: justify;
-       line-height: 15px;
-       margin-right: 50%;
+      .projects{
+       width: 10%;
+       text-align: right;
+       font-family: sans-serif;
+       font-size: 1.5em;
+       float: right;
       }
 
-      .centrato {
-       vertical-align:middle;
-       }
+
 
        .overClass {visibility: visible;}
        .outClass  {visibility: hidden;}
 
-       .app_fondo_on{
-         background-color: white;
-         height: 100%;
-         width: 100%;
-         position: absolute;
-         top: 0px;
-         left: 0px;
-         visibility: visible;
-        }
-        .app_fondo_off{
-          background-color: red;
+
+        .imm {
           height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          visibility: hidden;
-        }
-        .vicevita_imm {
-          max-width:30%;
+
+
+          top: 50%;
+          left:50%;
+          margin-left: var(--mL);
+          margin-top: var(--mT);
+          transform: translate(-50%,-50%);
           position:absolute;
-          top: 40px;
-          left:300px;
-          z-index: -1
-        }
-        .colpevole_imm{
-          max-width:35%;
-          position:absolute;
-          top: 125px;
-          left: 1000px;
-          z-index: -1
-        }
+          z-index: -3;
+          }
+
 
       }
 
@@ -169,7 +133,7 @@
           border:hidden;
         }
 
-        .vicevitatxt{
+        .indice{
           font-family: GarMed;
           font-size: 1.75em;
           line-height: 1em;
@@ -182,27 +146,15 @@
           left: 50%;
           cursor: pointer;
          }
-         .colpevoletxt{
-            font-family: GarMed;
-            font-size: 1.75em;
-            line-height: 1em;
-            cursor: pointer;
-            background-color:transparent;
-            border:hidden;
-            margin: 0;
-            transform: translate(-50%, 0);
-            position: relative;
-            left: 50%;
-            cursor: pointer;
-          }
+
         .angolosix {
          font-family: GarB;
-         font-size: 1.25em;
+         font-size: 1.75em;
          text-align: left;
         }
         .angolosixitalic {
          font-family: GarSBI;
-         font-size: 1.25em;
+         font-size: 1.75em;
          text-align: left;
          line-height: 1.5em;
         }
@@ -244,30 +196,13 @@
          .overClass {visibility: visible;}
          .outClass  {visibility: hidden;}
 
-         .app_fondo_on{
-           background-color: white;
-           height: 100%;
-           width: 100%;
-           position: absolute;
-           top: 0px;
-           left: 0px;
-           visibility: visible;
-          }
-          .app_fondo_off{
-            background-color: red;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            visibility: hidden;
-          }
-          .vicevita_imm {
-            max-width:0%;
+         .vicevita_imm {
+            max-width:100%;
             position:absolute;
             top: 0px;
             left: 0px;
             z-index: -1
+
           }
           .colpevole_imm{
             max-width:0%;
@@ -279,57 +214,45 @@
 
         }
 
+      /**generali**/
+      a:link {
+       color: black;
+       background-color: transparent;
+       text-decoration: none;
+     }
+
+     a:visited {
+       color: black;
+       background-color: transparent;
+       text-decoration: none;
+     }
+
+     a:hover {
+       color: black;
+       background-color: transparent;
+       text-decoration: none;
+     }
+
+     a:active {
+       color: black;
+       background-color: transparent;
+       text-decoration: none;
+     }
+
+      @font-face {
+        font-family:ortica;
+        src: url(font/Ortica-Light.otf);
+      }
+      @font-face {
+        font-family:HM;
+        src: url(font/HelveticaNeueMed.ttf);
+      }
+      @font-face {
+        font-family:HL;
+        src: url(font/HelveticaNeueLight.ttf);
+      }
 
 
-      @font-face {
-        font-family:HappyTimes;
-        src: url(font/happy-times-NG_regular_master.otf);
-      }
-      @font-face {
-        font-family:HappyTimesItalic;
-        src: url(font/happy-times-NG_italic_master.otf);
-      }
-      @font-face {
-        font-family:HappyTimesBold;
-        src: url(font/happy-times-NG_bold_master.otf);
-      }
-
-      @font-face {
-        font-family:AmiriR;
-        src: url(font/Amiri-Regular.ttf);
-      }
-      @font-face {
-        font-family:AmiriI;
-        src: url(font/Amiri-Italic.ttf);
-      }
-      @font-face {
-        font-family:GarLight;
-        src: url(font/CormorantGaramond-Light.ttf);
-      }
-      @font-face {
-        font-family:GarReg;
-        src: url(font/CormorantGaramond-Regular.ttf);
-      }
-      @font-face {
-        font-family:GarMed;
-        src: url(font/CormorantGaramond-Medium.ttf);
-      }
-      @font-face {
-        font-family:GarMedI;
-        src: url(font/CormorantGaramond-MediumItalic.ttf);
-      }
-      @font-face {
-        font-family:GarB;
-        src: url(font/CormorantGaramond-Bold.ttf);
-      }
-      @font-face {
-        font-family:GarBI;
-        src: url(font/CormorantGaramond-BoldItalic.ttf);
-      }
-      @font-face {
-        font-family:GarSBI;
-        src: url(font/CormorantGaramond-SemiBoldItalic.ttf);
-      }
 
   </style>
   </head>
@@ -337,112 +260,117 @@
 
 
 
-  <body>
+  <body id="body" leftmargin="0" topmargin="0" >
 
     <!--immagini a comparsa-->
 
     <div id="vicevita_imm">
-      <img src="foto/vicevita0.png" class="vicevita_imm">
+      <img src="foto/vicevita0.png" class="imm">
     </div>
 
     <div id="colpevole_imm">
-      <img src="foto/colpevole0.png" class="colpevole_imm" >
+      <img src="foto/colpevole0.png" class="imm" >
+    </div>
+
+    <div id="riace_imm">
+      <img src="foto/riace1.png" class="imm" >
+    </div>
+
+    <div id="ecovie_imm">
+      <img src="foto/ecovie1.png" class="imm" >
+    </div>
+
+    <div id="mrs_imm">
+      <img src="foto/mrs1.png" class="imm" >
     </div>
 
 
 
   <!--HEADER-->
 
-    <button id="header" class="header" >
-      <div id="Francesca" class= "angolosix">
+    <div id="header" class="header" >
+      <div id="Francesca" class="angolosix">
       Francesca Fazzini
       </div>
-      <div id="description" class= "angolosixitalic" >
-      Communication designer
-      </div>
-    </button>
+      <a href="#" class="about" >
+      About
+      </a>
+      <a href="#" class="projects" >
+      Projects
+      </a>
+    </div>
 
 
     <!--titoli-->
     <br></br><br></br>
-    <div>
+    <div class="box">
 
-    <button id="vicevitatxt" class= "vicevitatxt">
-      LA VICEVITA, TRENI E VIAGGI IN TRENO
-    </button>
+    <marquee  id="vicevitatxt" class= "indice" >
+    <div onMouseOver="document.getElementById('vicevitatxt').stop();" onMouseOut="document.getElementById('vicevitatxt').start();">LA VICEVITA, TRENI E VIAGGI IN TRENO </div>
+   </marquee>
     <br></br>
 
-    <button id="colpevoletxt" class= "colpevoletxt">
-      COLPEVOLE
-    </button>
+    <marquee loop id="colpevoletxt" class= "indice">
+      <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();">COLPEVOLE </div>
+    </marquee>
+    <br></br>
 
-    </div>
+    <marquee loop id="riacetxt" class= "indice">
+      <div onMouseOver="document.getElementById('riacetxt').stop();" onMouseOut="document.getElementById('riacetxt').start();">RIACE, VILLAGGIO GLOBALE </div>
+    </marquee>
+    <br></br>
 
+    <marquee loop id="ecovietxt" class= "indice">
+      <div onMouseOver="document.getElementById('ecovietxt').stop();" onMouseOut="document.getElementById('ecovietxt').start();">ECOVIE</div>
+    </marquee>
+    <br></br>
 
-    <!-- approfondimenti-->
+    <marquee loop id="eavestxt" class= "indice">
+      <div onMouseOver="document.getElementById('eavestxt').stop();" onMouseOut="document.getElementById('eavestxt').start();">MRS EAVES - TYPE SPECIMEN </div>
+    </marquee>
+    <br></br>
 
-    <div id="vicevita_app">
-      <div style="text-align:center">
-        <div class= "descbold" style="z-index:+1">LA VICEVITA, TRENI E VIAGGI IN TRENO </div>
-        <div class= "descitalic" style="z-index:+1"><br></br><br></br>Il progetto consiste nella realizzazione di un “libro visivo”:
-          a partire da un testo esistente<br></br> - La vicevita di Valerio Magrelli - si è cercato di tradurre i significati propri dell’opera letteraria <br></br>
-          in scelte progettuali utili a restituire una fruizione dell’oggetto libro che fosse in grado<br></br> di amplificare l’esperienza di lettura, nonché di appropriazione di
-          nuove sfumature di senso.<br></br> Dopo aver studiato ed analizzato l’opera di partenza e il contesto entro cui essa si colloca, <br></br>gli interventi progettuali sono stati fatti
-          a partire dalla scelta del formato e dall’impostazione<br></br> macro e micro tipografica, per poi passare al trattamento grafico, alla scelta dei materiali, <br></br> sino alla confezione
-          e presentazione.
-        </div>
-        <div class= "descreg" style="z-index:+1"><br></br><br></br>La vicevita è una raccolta di piccoli racconti; il fil rouge che tiene insieme quanto narrato <br></br>
-          è l’esperienza del viaggiare in treno, che per Magrelli coincide con una condizione dell’essere <br></br>che chiama “vicevita”. Si tratta di una dimensione “sospesa” tra
-          un punto di partenza e uno di arrivo;<br></br> una dimensione in cui l’esistenzadel viaggiatore è confinata alla condizione di attesa.<br></br>Queste sono le premesse per costruire una narrazione fatta di
-          frammenti di poesie, di sognanti ricordi,<br></br> di suggestioni: momenti che appaiono “fuori fuoco”, che “sfuggono” perché impalpabilicome nuvole.<br></br> Momenti sfumati di vita, intrappolati dall’involucro
-          dell’aspettativa.<br></br><br></br>
-        </div>
-        <div id="exit" class="angolodx" style="cursor: pointer; z-index:+2"> X </div>
-      </div>
+    <marquee loop id="steinertxt" class= "indice">
+      <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">ALBE STEINER</div>
+    </marquee>
+    <br></br>
 
-
-      <div id="vicevita_serie" style="text-align:center">
-        <br></br><br></br>
-        <img src="foto/vicevita0.png" style="max-width:49.8%; max-height: auto; z-index:+1" >
-        <img src="foto/vicevita5.png" style="max-width:49.8%; max-height: auto; z-index:+1" >
-        <img src="foto/vicevita1.png" style="max-width:49.8%; max-height: auto; z-index:+1" >
-        <img src="foto/vicevita2.png" style="max-width:49.8%; max-height: auto; z-index:+1" >
-        <img src="foto/vicevita3.png" style="max-width:99.8%; max-height: auto; z-index:+1" >
-        <img src="foto/vicevita4.png" style="max-width:99.8%; max-height: auto; z-index:+1" >
-      </div>
+    <marquee loop id="illutxt" class= "indice">
+      <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();">ILLUSTRATION</div>
+    </marquee>
 
 
     </div>
-
-
-
-
-
-
 
 
 
   <script>
 
-  var myParagrafo = document.getElementById("vicevitatxt");
-  document.getElementById("vicevita_app").className = "app_fondo_off";
-  myParagrafo.onclick = function() {document.getElementById("vicevita_app").className = "app_fondo_on"; };
-
-  var myParagrafo = document.getElementById("exit");
-  myParagrafo.onclick = function() {document.getElementById("vicevita_app").className = "app_fondo_off"; };
 
   var myParagrafo = document.getElementById("vicevitatxt");
   document.getElementById("vicevita_imm").className = "outClass";
   myParagrafo.onmouseover = function() {document.getElementById("vicevita_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("vicevita_imm").className = "outClass"; };
 
-
-
-
   var myParagrafo = document.getElementById("colpevoletxt");
   document.getElementById("colpevole_imm").className = "outClass";
   myParagrafo.onmouseover = function() {document.getElementById("colpevole_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("colpevole_imm").className = "outClass"; };
+
+  var myParagrafo = document.getElementById("riacetxt");
+  document.getElementById("riace_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("riace_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("riace_imm").className = "outClass"; };
+
+  var myParagrafo = document.getElementById("ecovietxt");
+  document.getElementById("ecovie_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("ecovie_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("ecovie_imm").className = "outClass"; };
+
+  var myParagrafo = document.getElementById("eavestxt");
+  document.getElementById("mrs_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("mrs_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("mrs_imm").className = "outClass"; };
 
 
 
