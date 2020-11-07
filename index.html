@@ -30,70 +30,87 @@
     @media (min-width: 451px) {
 
       body {
-        font-size: 75%;
+        font-size: 100%;
 
       }
+      ::-moz-selection { /* Code for Firefox */
+        color: white;
+        background: black;
+      }
+
+      ::selection {
+        color: white;
+        background: black;
+      }
+
       .header{
         padding-left: 10%;
         padding-right: 10%;
-        padding-top: 25px;
-        cursor: pointer;
+        content: fixed;
+        cursor: default;
         border:hidden;
-
-
-
-      }
+       }
+       .footer{
+         padding-left: 10%;
+         padding-right: 10%;
+         border:hidden;
+         bottom:25px;
+         position: absolute;
+         font-family: sans-serif;
+         font-size: 1.25em;
+         line-height: 0.75em;
+         cursor: default;
+        }
       .box{
         background-color: transparent;
-        border: 2px solid #000000;
-        width: 50%;
-        height: auto;
-        margin-left: 25%;
-        margin-right: 25%;
+        border: 0px solid #000000;
+        width: 35vw;
+        height: 35vw;
+        min-width: 450px;
+        min-height: 450px;
         white-space: nowrap;
-        overflow: hidden;
+        overflow: auto;
         text-overflow: ellipsis;
-        text-align: left;
+        text-align: center;
+        vertical-align: middle;
+        top: 50%;
+        left:50%;
+        margin-left: var(--mL);
+        margin-top: var(--mT);
+        transform: translate(-50%,-50%);
+        position:fixed;
       }
+      .box::-webkit-scrollbar {
+    display: none;}
       .indice{
         font-family:ortica;
         text-align: left;
-        font-size: 5em;
-        line-height: 1.5em;
+        font-size:4em;
         cursor: pointer;
-
-        margin-left: 20px;
         border:hidden;
         margin: 0;
         transform: translate(-50%, 0);
         position: relative;
         left: 50%;
        }
-
-
-      .angolosix {
+      .fra {
        font-family: sans-serif;
-       font-size: 1.5em;
+       font-size: 1.25em;
        float:left;
-       padding: 0px;
+       margin-top: 25px;
+
+       }
 
 
-      }
       .about{
-       width: 10%;
        text-align: right;
        font-family: sans-serif;
-       font-size: 1.5em;
+       font-size: 1.25em;
        float: right;
+       margin-top: 25px;
 
       }
-      .projects{
-       width: 10%;
-       text-align: right;
-       font-family: sans-serif;
-       font-size: 1.5em;
-       float: right;
-      }
+
 
 
 
@@ -122,97 +139,113 @@
       @media (max-width: 451px) {
 
         body {
-        background-color: white;
-              width: 100%;
-              font-size: 100%;
+          font-size: 100%;
+
         }
-        .header{
-          text-align: left;
-          cursor: pointer;
-          background-color:transparent;
-          border:hidden;
+        ::-moz-selection { /* Code for Firefox */
+          color: white;
+          background: black;
         }
 
+        ::selection {
+          color: white;
+          background: black;
+        }
+
+        .header{
+          padding-left: 10%;
+          padding-right: 10%;
+          content: fixed;
+          cursor: default;
+          border:hidden;
+         }
+         .footer{
+           padding-left: 10%;
+           padding-right: 10%;
+           border:hidden;
+           bottom:25px;
+           position: absolute;
+           font-family: sans-serif;
+           font-size: 1.25em;
+           line-height: 0.75em;
+           cursor: default;
+          }
+        .box{
+          background-color: transparent;
+          border: 0px solid #000000;
+          width: 35vw;
+          height: 35vw;
+          min-width: 450px;
+          min-height: 450px;
+          white-space: nowrap;
+          overflow: auto;
+          text-overflow: ellipsis;
+          text-align: center;
+          vertical-align: middle;
+          top: 50%;
+          left:50%;
+          margin-left: var(--mL);
+          margin-top: var(--mT);
+          transform: translate(-50%,-50%);
+          position:fixed;
+        }
+        .box::-webkit-scrollbar {
+      display: none;}
         .indice{
-          font-family: GarMed;
-          font-size: 1.75em;
-          line-height: 1em;
+          font-family:ortica;
+          text-align: left;
+          font-size:4em;
           cursor: pointer;
-          background-color:transparent;
           border:hidden;
           margin: 0;
           transform: translate(-50%, 0);
           position: relative;
           left: 50%;
-          cursor: pointer;
+         }
+        .fra {
+         font-family: sans-serif;
+         font-size: 1.25em;
+         float:left;
+         margin-top: 25px;
+
          }
 
-        .angolosix {
-         font-family: GarB;
-         font-size: 1.75em;
-         text-align: left;
-        }
-        .angolosixitalic {
-         font-family: GarSBI;
-         font-size: 1.75em;
-         text-align: left;
-         line-height: 1.5em;
-        }
-        .angolodx {
-         font-family: HappyTimesBold;
-         font-size: 20px;
+
+        .about{
          text-align: right;
-         position: absolute;
-         top:0px;
-         line-height: 15px;
-         margin-left: 99%;
-        }
-        .descreg{
-         font-family: HappyTimes;
-         font-size: 20px;
-         text-align: justify;
-         line-height: 15px;
-         margin-right: 50%;
-        }
-        .descbold{
-         font-family: HappyTimesBold;
-         font-size: 20px;
-         text-align: justify;
-         line-height: 15px;
-         margin-right: 50%;
-         }
-        .descitalic{
-         font-family: HappyTimesItalic;
-         font-size: 20px;
-         text-align: justify;
-         line-height: 15px;
-         margin-right: 50%;
+         font-family: sans-serif;
+         font-size: 1.25em;
+         float: right;
+         margin-top: 25px;
+
         }
 
-        .centrato {
-         vertical-align:middle;
-         }
+
+
 
          .overClass {visibility: visible;}
          .outClass  {visibility: hidden;}
 
-         .vicevita_imm {
-            max-width:100%;
-            position:absolute;
-            top: 0px;
-            left: 0px;
-            z-index: -1
 
-          }
-          .colpevole_imm{
-            max-width:0%;
+          .imm {
+            height: 100%;
+
+
+            top: 50%;
+            left:50%;
+            margin-left: var(--mL);
+            margin-top: var(--mT);
+            transform: translate(-50%,-50%);
             position:absolute;
-            top: 0px;
-            left: 0px;
-            z-index: -1
-          }
+            z-index: -3;
+            }
+
 
         }
+
+
+
+
 
       /**generali**/
       a:link {
@@ -269,11 +302,11 @@
     </div>
 
     <div id="colpevole_imm">
-      <img src="foto/colpevole0.png" class="imm" >
+      <img src="foto/colpevole3.png" class="imm" >
     </div>
 
     <div id="riace_imm">
-      <img src="foto/riace1.png" class="imm" >
+      <img src="foto/riace0.png" class="imm" >
     </div>
 
     <div id="ecovie_imm">
@@ -289,15 +322,18 @@
   <!--HEADER-->
 
     <div id="header" class="header" >
-      <div id="Francesca" class="angolosix">
+      <div id="Francesca" class="fra">
       Francesca Fazzini
       </div>
-      <a href="#" class="about" >
+      <div class="about">
+      <a href="#" >
       About
       </a>
-      <a href="#" class="projects" >
+      /
+      <a href="#" >
       Projects
       </a>
+      </div>
     </div>
 
 
@@ -305,42 +341,58 @@
     <br></br><br></br>
     <div class="box">
 
-    <marquee  id="vicevitatxt" class= "indice" >
+    <marquee loop="-1" scrollamount="15"  id="vicevitatxt" class= "indice" >
     <div onMouseOver="document.getElementById('vicevitatxt').stop();" onMouseOut="document.getElementById('vicevitatxt').start();">LA VICEVITA, TRENI E VIAGGI IN TRENO </div>
    </marquee>
     <br></br>
 
-    <marquee loop id="colpevoletxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="colpevoletxt" class= "indice">
       <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();">COLPEVOLE </div>
     </marquee>
     <br></br>
 
-    <marquee loop id="riacetxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="riacetxt" class= "indice">
       <div onMouseOver="document.getElementById('riacetxt').stop();" onMouseOut="document.getElementById('riacetxt').start();">RIACE, VILLAGGIO GLOBALE </div>
     </marquee>
     <br></br>
 
-    <marquee loop id="ecovietxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="ecovietxt" class= "indice">
       <div onMouseOver="document.getElementById('ecovietxt').stop();" onMouseOut="document.getElementById('ecovietxt').start();">ECOVIE</div>
     </marquee>
     <br></br>
 
-    <marquee loop id="eavestxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="eavestxt" class= "indice">
       <div onMouseOver="document.getElementById('eavestxt').stop();" onMouseOut="document.getElementById('eavestxt').start();">MRS EAVES - TYPE SPECIMEN </div>
     </marquee>
     <br></br>
 
-    <marquee loop id="steinertxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="steinertxt" class= "indice">
       <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">ALBE STEINER</div>
     </marquee>
     <br></br>
 
-    <marquee loop id="illutxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="illutxt" class= "indice">
       <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();">ILLUSTRATION</div>
     </marquee>
+    <br></br>
 
 
     </div>
+
+<!--footer-->
+    <div id="footer" class="footer" >
+      All rights reserved © Francesca Fazzini 2020
+      </a>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
 
 
 
