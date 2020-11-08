@@ -189,6 +189,12 @@
            line-height: 1em;
            text-align: center;
            cursor: default;
+           top: 50%;
+           left:50%;
+           margin-left: var(--mL);
+           margin-top: var(--mT);
+           transform: translate(-50%,-50%);
+           
           }
         .box{
           background-color: transparent;
@@ -337,6 +343,10 @@
       <img src="foto/mrs1.png" class="imm" >
     </div>
 
+    <div id="ill_imm">
+      <img src="foto/ill0.png" class="imm" >
+    </div>
+
 
 
   <!--HEADER-->
@@ -454,6 +464,11 @@
   document.getElementById("mrs_imm").className = "outClass";
   myParagrafo.onmouseover = function() {document.getElementById("mrs_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("mrs_imm").className = "outClass"; };
+
+  var myParagrafo = document.getElementById("illutxt");
+  document.getElementById("ill_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("ill_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("ill_imm").className = "outClass"; };
 
 
 
