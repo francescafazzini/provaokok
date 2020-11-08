@@ -31,6 +31,7 @@
 
       body {
         font-size: 100%;
+        overflow: hidden;
 
       }
 
@@ -64,14 +65,13 @@
         }
       .box{
         background-color: transparent;
-        border: 3px solid #000000;
+        border: 0px solid #000000;
         width: 35vw;
         height: 35vw;
         min-width: 450px;
         min-height: 450px;
         white-space: nowrap;
         overflow: auto;
-        text-overflow: ellipsis;
         text-align: center;
         vertical-align: middle;
         top: 50%;
@@ -80,13 +80,14 @@
         margin-top: var(--mT);
         transform: translate(-50%,-50%);
         position:fixed;
+        z-index: +1;
       }
       .box::-webkit-scrollbar {
     display: none;}
       .indice{
         font-family:ortica;
         text-align: left;
-        font-size:8em;
+        font-size:5em;
         line-height: normal;
         cursor: pointer;
         border:hidden;
@@ -118,12 +119,28 @@
 
        .overClass {visibility: visible;}
        .outClass  {visibility: hidden;}
+       .overClassintro {
+         visibility: visible;
+         width: 35vw;
+         height: 35vw;
+         background-color: black;
+         color:white;
+         font-family: ortica;
+         font-size: 1.25em;
+         line-height: 0.75em;
+         text-align: left;
+         overflow: auto;
+         z-index: +5;
+         min-width: 450px;
+         min-height: 450px;
+        }
+        .overClassintro::-webkit-scrollbar {
+      display: none;}
 
 
         .imm {
-          height: 0px;
-
-
+          min-width: 100%;
+          min-height: 100%;
           top: 50%;
           left:50%;
           margin-left: var(--mL);
@@ -168,14 +185,14 @@
            bottom:25px;
            position: absolute;
            font-family: sans-serif;
-           font-size: 1.5em;
+           font-size: 1em;
            line-height: 1em;
            text-align: center;
            cursor: default;
           }
         .box{
           background-color: transparent;
-          border: 2px solid #000000;
+          border: 0px solid #000000;
           width: 40vh;
           height: 40vh;
           white-space: nowrap;
@@ -195,7 +212,7 @@
         .indice{
           font-family:ortica;
           text-align: left;
-          font-size:4em;
+          font-size:3em;
           line-height: auto;
           cursor: pointer;
           border:hidden;
@@ -206,7 +223,7 @@
          }
         .fra {
          font-family: sans-serif;
-         font-size: 1.5em;
+         font-size: 1em;
          float:center;
          text-align: center;
          margin-top: 25px;
@@ -217,7 +234,7 @@
         .about{
 
          font-family: sans-serif;
-         font-size: 1.5em;
+         font-size: 1em;
          float:center;
          text-align: center;
          margin-top: 25px;
@@ -232,9 +249,8 @@
 
 
           .imm {
-            width: 0px;
-
-
+            min-width: 100%;
+            min-height: 100%;
             top: 50%;
             left:50%;
             margin-left: var(--mL);
@@ -297,24 +313,24 @@
 
 
 
-  <body id="body" leftmargin="0" topmargin="0" >
+  <body id="body" leftmargin="0" topmargin="0" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
     <!--immagini a comparsa-->
 
     <div id="vicevita_imm">
-      <img src="foto/vicevita0.png" class="imm">
+      <img src="foto/vicevita44.png" class="imm">
     </div>
 
     <div id="colpevole_imm">
-      <img src="foto/colpevole3.png" class="imm" >
+      <img src="foto/colpevole1.png" class="imm" >
     </div>
 
     <div id="riace_imm">
-      <img src="foto/riace0.png" class="imm" >
+      <img src="foto/riace1.png" class="imm" >
     </div>
 
     <div id="ecovie_imm">
-      <img src="foto/ecovie1.png" class="imm" >
+      <img src="foto/ecovie11.png" class="imm" >
     </div>
 
     <div id="mrs_imm">
@@ -383,13 +399,23 @@
 
     </div>
 
+<!--intro-->
+    <div id="vicevita_intro" class="outClass" >
+      <br></br>2020 <br></br> La vicevita, treni e viaggi in treno di Valerio Magrelli <br></br> Libro visivo
+      <br></br><br></br>
+      Il progetto consiste nella realizzazione di un “libro visivo”:<br></br>
+        a partire da un testo esistente - La vicevita di Valerio Magrelli - <br></br>si è cercato di tradurre i significati propri dell’opera letteraria<br></br>
+        in scelte progettuali utili a restituire una fruizione dell’oggetto libro <br></br>che fosse in grado di amplificare l’esperienza di lettura, nonché <br></br>di appropriazione di
+        nuove sfumature di senso. Dopo aver studiato<br></br> ed analizzato l’opera di partenza e il contesto entro cui essa si colloca, <br></br>gli interventi progettuali sono stati fatti
+        a partire dalla scelta<br></br> del formato e dall’impostazione macro e micro  tipografica, <br></br>per poi passare al trattamento grafico, alla scelta dei materiali, <br></br> sino alla confezione
+        e presentazione.
+    </div>
+
 <!--footer-->
     <div id="footer" class="footer" >
       All rights reserved <br></br>© Francesca Fazzini 2020
-      </a>
 
-
-      </div>
+    </div>
 
     </div>
 
@@ -407,6 +433,7 @@
   document.getElementById("vicevita_imm").className = "outClass";
   myParagrafo.onmouseover = function() {document.getElementById("vicevita_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("vicevita_imm").className = "outClass"; };
+  myParagrafo.onclick = function() {document.getElementById("vicevita_intro").className = "overClassintro"; };
 
   var myParagrafo = document.getElementById("colpevoletxt");
   document.getElementById("colpevole_imm").className = "outClass";
