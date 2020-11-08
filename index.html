@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Francesca Fazzini</title>
-    <link rel="shortcut icon" href="i/icon0.ico"> <!-- icona da cambiare-->
+    <link rel="shortcut icon" href="i/Immagine.ico"> <!-- icona da cambiare-->
     <link rel="stylesheet" href="css/indexDesktop.css" media="screen and (min-width: 451px)"> <!-- stile pc-->
     <link rel="stylesheet" href="css/indexMobile.css" media="screen and (max-width: 450px)"> <!--stile cell-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--condizione iniziale viewport-->
@@ -29,9 +29,47 @@
     /*pc!!!!!!!!!!*/
     @media (min-width: 451px) {
 
+      .loadingbox {
+      width: 10vw;
+      height: 10vw;
+      border: 3px solid;
+      border-color: red;
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      }
+      .loadingtxt{
+        font-family:ortica;
+        text-align: left;
+        font-size:5em;
+        line-height: 10vw;
+        cursor: pointer;
+        border:hidden;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        position: relative;
+        left: 50%;
+        top:50%;
+        color:red;
+       }
+       #loading{
+         width: 100%;
+         height: 100%;
+         background-color: white;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+         text-align: center;
+         position: absolute;
+        }
+
       body {
         font-size: 100%;
         overflow: hidden;
+        color: red;
 
       }
 
@@ -148,6 +186,7 @@
           transform: translate(-50%,-50%);
           position:absolute;
           z-index: -3;
+
           }
 
 
@@ -321,10 +360,21 @@
 
   <body id="body" leftmargin="0" topmargin="0" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 
+  <!--loader-->
+
+  <div id="loading">
+    <div class="loadingbox">
+    <marquee  loop="-1" class= "loadingtxt" >
+    Loading...
+   </marquee>
+    </div>
+
+  </div>
+
     <!--immagini a comparsa-->
 
     <div id="vicevita_imm">
-      <img src="foto/vicevita44.png" class="imm">
+      <img src="foto/vicevita000.png" class="imm">
     </div>
 
     <div id="colpevole_imm">
@@ -332,7 +382,7 @@
     </div>
 
     <div id="riace_imm">
-      <img src="foto/riace0.png" class="imm" >
+      <img src="foto/riace2.png" class="imm" >
     </div>
 
     <div id="ecovie_imm">
@@ -343,9 +393,7 @@
       <img src="foto/mrs1.png" class="imm" >
     </div>
 
-    <div id="ill_imm">
-      <img src="foto/ill0.png" class="imm" >
-    </div>
+
 
 
 
@@ -356,11 +404,11 @@
       Francesca Fazzini
       </div>
       <div class="about">
-      <a href="#" >
+      <a href="#" style="color:red" >
       About
       </a>
       /
-      <a href="#" >
+      <a href="#" style="color:red" >
       Projects
       </a>
       </div>
@@ -438,6 +486,10 @@
 
   <script>
 
+  window.onload=function(){
+  document.getElementById("loading").style.display="none";
+  }
+
 
   var myParagrafo = document.getElementById("vicevitatxt");
   document.getElementById("vicevita_imm").className = "outClass";
@@ -465,10 +517,9 @@
   myParagrafo.onmouseover = function() {document.getElementById("mrs_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("mrs_imm").className = "outClass"; };
 
-  var myParagrafo = document.getElementById("illutxt");
-  document.getElementById("ill_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("ill_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("ill_imm").className = "outClass"; };
+
+
+
 
 
 
