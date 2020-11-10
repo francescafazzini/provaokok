@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Francesca Fazzini</title>
+    <title>La vicevita - Francesca Fazzini</title>
     <link rel="shortcut icon" href="i/icon0.ico"> <!-- icona da cambiare-->
     <link rel="stylesheet" href="css/indexDesktop.css" media="screen and (min-width: 451px)"> <!-- stile pc-->
     <link rel="stylesheet" href="css/indexMobile.css" media="screen and (max-width: 450px)"> <!--stile cell-->
@@ -98,8 +98,7 @@
         border:hidden;
        }
 
-
-       .footer{
+       .rights{
          padding-left: 10%;
          padding-right: 10%;
          border:hidden;
@@ -110,6 +109,7 @@
          line-height: 0.75em;
          cursor: default;
         }
+
       .box{
         background-color: transparent;
         border: 3px solid;
@@ -118,9 +118,7 @@
         height: 35vw;
         min-width: 450px;
         min-height: 450px;
-        white-space: nowrap;
-        overflow: auto;
-        text-align: center;
+        overflow:scroll;
         vertical-align: middle;
         top: 50%;
         left:50%;
@@ -132,20 +130,20 @@
       }
       .box::-webkit-scrollbar {
     display: none;}
-      .indice{
+      .testo{
         font-family:GarI;
         text-align: left;
-        font-size:7vw;
+        font-size:3.5vw;
+        line-height: auto;
         cursor: pointer;
         border:hidden;
         margin: 0;
         transform: translate(-50%, 0);
         position: relative;
         left: 50%;
-
-
+        text-indent: 1em;
        }
-      .fra {
+      .back {
        font-family: sans-serif;
        font-size: 1.5em;
        float:left;
@@ -153,13 +151,15 @@
        }
 
 
-      .about{
+      .images{
        text-align: right;
        font-family: sans-serif;
        font-size: 1.5em;
        float: right;
        margin-top: 25px;
        }
+
+
        .desc{
          right: 10%;
          border:hidden;
@@ -184,12 +184,12 @@
        .outClass  {visibility: hidden;width: 0px;height: 0px;}
 
         .overClassintro::-webkit-scrollbar {
-      display: none;}
+        display: none;}
 
 
         .imm {
 
-          width: 100%;
+          height: 35vw;
           top: 50%;
           left:50%;
           margin-left: var(--mL);
@@ -383,75 +383,25 @@
 
   </div>
 
-    <!--immagini a comparsa-->
-
-    <div id="vicevita_imm">
-      <img src="foto/vicevita444.png" class="imm">
-    </div>
-
-    <div id="colpevole_imm">
-      <img src="foto/colpevole11.png" class="imm" >
-    </div>
-
-    <div id="riace_imm">
-      <img src="foto/riace0.png" class="imm" >
-    </div>
-
-   <div id="ecovie_imm">
-      <img src="foto/ecovie2.png" class="imm" >
-    </div>
-
-    <div id="mrs_imm">
-      <img src="foto/mrs00.png" class="imm" >
-    </div>
-
-    <div id="steiner_imm">
-      <img src="foto/riace33.png" class="imm" >
-    </div>
-
-      <!--desc a comparsa-->
-
-    <div id="vicevita_desc" class="desc">
-       La vicevita, treni e viaggi in treno <br></br> Bachelor thesis project / Editorial design, 2020
-    </div>
-
-    <div id="colpevole_desc" class="desc">
-       Colpevole <br></br> Sociology of communication, 2019
-    </div>
-
-    <div id="riace_desc" class="desc">
-       Riace, villaggio globale <br></br> Content curation / Editorial design, 2018
-    </div>
-
-    <div id="mrs_desc" class="desc">
-       Mrs Eaves<br></br> Type specimen, 2020
-    </div>
-
-    <div id="steiner_desc" class="desc">
-       Albe Steiner<br></br> Content curation / Editorial design, 2020
-    </div>
-
-    <div id="ecovie_desc" class="desc">
-       Ecovie <br></br> Illustrations, 2019
-    </div>
 
 
 
 
 
-  <!--HEADER-->
+
+   <!--HEADER-->
 
     <div id="header" class="header" >
-      <div id="Francesca" class="fra">
-      Francesca Fazzini
+      <div id="Francesca" class="back">
+      <a href="index.html">Francesca Fazzini </a>
       </div>
-      <div class="about">
-      <a  style="color:red; text-decoration: underline" >
-      Projects
+      <div class="images">
+      <a href="vicevita-photos.html" style="color:red" >
+      Photos
       </a>
       /
-      <a href="about.html" style="color:red" >
-      About
+      <a  style="color:red;text-decoration:underline">
+      Abstract
       </a>
       </div>
     </div>
@@ -460,52 +410,33 @@
     <!--titoli-->
     <br></br><br></br>
     <div class="box">
+      <div id="vicevitatxt" class= "testo">
+        La vicevita è una raccolta di piccoli racconti; il file rouge che tiene insieme quanto narrato è l’esperienza del viaggiare in treno,
+        che per Magrelli coincide con una condizione dell’essere che chiama “vicevita”. Si tratta di una dimensione “sospesa” tra un punto di
+        partenza e uno di arrivo; una dimensione in cui l’esistenza del viaggiatore è confinata alla condizione di attesa.
 
-    <marquee  loop="-1" scrollamount="10"  id="vicevitatxt" class= "indice" >
-    <div onMouseOver="document.getElementById('vicevitatxt').stop();" onMouseOut="document.getElementById('vicevitatxt').start();"><a href="vicevita-photos.html">La vicevita, treni e viaggi in treno
-    </a></div>
-   </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="colpevoletxt" class= "indice">
-      <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();">Colpevole</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="riacetxt" class= "indice">
-      <div onMouseOver="document.getElementById('riacetxt').stop();" onMouseOut="document.getElementById('riacetxt').start();">Riace, villaggio globale </div>
-    </marquee>
-    <br></br>
-
-   <marquee loop="-1" scrollamount="10"  id="ecovietxt" class= "indice">
-      <div onMouseOver="document.getElementById('ecovietxt').stop();" onMouseOut="document.getElementById('ecovietxt').start();">Ecovie</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1" scrollamount="10"  id="eavestxt" class= "indice">
-      <div onMouseOver="document.getElementById('eavestxt').stop();" onMouseOut="document.getElementById('eavestxt').start();">Mrs Eaves</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1" scrollamount="10"  id="steinertxt" class= "indice">
-      <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">Albe Steiner</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="illutxt" class= "indice">
-      <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();">Illustrations </div>
-    </marquee>
-    <br></br>
-
-  </div>
-
-
-
-<!--footer-->
-    <div id="footer" class="footer" >
-      All rights reserved <br></br>© Francesca Fazzini 2020
-
+     </div>
+     <div id="vicevitatxt" class= "testo">
+      Queste sono le premesse per costruire una narrazione fatta di frammenti di poesie, di sognanti ricordi, di suggestioni: momenti che appaiono
+       “fuori fuoco”, che “sfuggono” perché impalpabili come nuvole. Momenti sfumati di vita, intrappolati dall’involucro dell’aspettativa.
     </div>
+   </div>
+
+
+<!--desc-->
+   <div id="vicevita_desc" class="desc">
+      La vicevita, treni e viaggi in treno <br></br> Bachelor thesis project / Editorial design, 2020
+   </div>
+
+   <!--footer-->
+       <div id="footer" class="rights" >
+         All rights reserved <br></br>© Francesca Fazzini 2020
+
+       </div>
+
+
+
+
 
 
 
@@ -523,65 +454,6 @@
   }
 
 
-  var myParagrafo = document.getElementById("vicevitatxt");
-  document.getElementById("vicevita_desc").className = "outClass";
-  document.getElementById("vicevita_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("vicevita_desc").className = "desc";
-                                        document.getElementById("vicevita_imm").className = "overClass";
-                                        document.getElementById('vicevitatxt').stop(); };
-  myParagrafo.onmouseout  = function() {document.getElementById("vicevita_desc").className = "outClass";
-                                        document.getElementById("vicevita_imm").className = "outClass";
-                                        document.getElementById('vicevitatxt').start(); };
-
-  var myParagrafo = document.getElementById("colpevoletxt");
-  document.getElementById("colpevole_desc").className = "outClass";
-  document.getElementById("colpevole_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("colpevole_desc").className = "desc";
-                                        document.getElementById("colpevole_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("colpevole_desc").className = "outClass";
-                                        document.getElementById("colpevole_imm").className = "outClass"; };
-
-  var myParagrafo = document.getElementById("riacetxt");
-  document.getElementById("riace_desc").className = "outClass";
-  document.getElementById("riace_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("riace_desc").className = "desc";
-                                        document.getElementById("riace_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("riace_desc").className = "outClass";
-                                        document.getElementById("riace_imm").className = "outClass"; };
-
-  var myParagrafo = document.getElementById("ecovietxt");
-  document.getElementById("ecovie_desc").className = "outClass";
-  document.getElementById("ecovie_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("ecovie_desc").className = "desc";
-                                        document.getElementById("ecovie_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("ecovie_desc").className = "outClass";
-                                        document.getElementById("ecovie_imm").className = "outClass"; };
-
-  var myParagrafo = document.getElementById("eavestxt");
-  document.getElementById("mrs_desc").className = "outClass";
-  document.getElementById("mrs_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("mrs_desc").className = "desc";
-                                        document.getElementById("mrs_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("mrs_desc").className = "outClass";
-                                        document.getElementById("mrs_imm").className = "outClass"; };
-
-
-  var myParagrafo = document.getElementById("steinertxt");
-  document.getElementById("steiner_desc").className = "outClass";
-  document.getElementById("steiner_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("steiner_desc").className = "desc";
-                                        document.getElementById("steiner_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("steiner_desc").className = "outClass";
-                                        document.getElementById("steiner_imm").className = "outClass"; };
-
-
-  var myParagrafo = document.getElementById("illutxt");
-  document.getElementById("illu_desc").className = "outClass";
-  document.getElementById("illu_imm").className = "outClass";
-  myParagrafo.onmouseover = function() {document.getElementById("illu_desc").className = "desc";
-                                        document.getElementById("illu_imm").className = "overClass"; };
-  myParagrafo.onmouseout  = function() {document.getElementById("illu_desc").className = "outClass";
-                                        document.getElementById("illu_imm").className = "outClass"; };
 
 
 
@@ -592,4 +464,3 @@
 
   </script>
   </body>
-</html>

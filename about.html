@@ -383,57 +383,6 @@
 
   </div>
 
-    <!--immagini a comparsa-->
-
-    <div id="vicevita_imm">
-      <img src="foto/vicevita444.png" class="imm">
-    </div>
-
-    <div id="colpevole_imm">
-      <img src="foto/colpevole11.png" class="imm" >
-    </div>
-
-    <div id="riace_imm">
-      <img src="foto/riace0.png" class="imm" >
-    </div>
-
-   <div id="ecovie_imm">
-      <img src="foto/ecovie2.png" class="imm" >
-    </div>
-
-    <div id="mrs_imm">
-      <img src="foto/mrs00.png" class="imm" >
-    </div>
-
-    <div id="steiner_imm">
-      <img src="foto/riace33.png" class="imm" >
-    </div>
-
-      <!--desc a comparsa-->
-
-    <div id="vicevita_desc" class="desc">
-       La vicevita, treni e viaggi in treno <br></br> Bachelor thesis project / Editorial design, 2020
-    </div>
-
-    <div id="colpevole_desc" class="desc">
-       Colpevole <br></br> Sociology of communication, 2019
-    </div>
-
-    <div id="riace_desc" class="desc">
-       Riace, villaggio globale <br></br> Content curation / Editorial design, 2018
-    </div>
-
-    <div id="mrs_desc" class="desc">
-       Mrs Eaves<br></br> Type specimen, 2020
-    </div>
-
-    <div id="steiner_desc" class="desc">
-       Albe Steiner<br></br> Content curation / Editorial design, 2020
-    </div>
-
-    <div id="ecovie_desc" class="desc">
-       Ecovie <br></br> Illustrations, 2019
-    </div>
 
 
 
@@ -446,11 +395,11 @@
       Francesca Fazzini
       </div>
       <div class="about">
-      <a  style="color:red; text-decoration: underline" >
+      <a href="index.html" style="color:red" >
       Projects
       </a>
       /
-      <a href="about.html" style="color:red" >
+      <a style="color:red; text-decoration: underline" >
       About
       </a>
       </div>
@@ -461,41 +410,6 @@
     <br></br><br></br>
     <div class="box">
 
-    <marquee  loop="-1" scrollamount="10"  id="vicevitatxt" class= "indice" >
-    <div onMouseOver="document.getElementById('vicevitatxt').stop();" onMouseOut="document.getElementById('vicevitatxt').start();"><a href="vicevita-photos.html">La vicevita, treni e viaggi in treno
-    </a></div>
-   </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="colpevoletxt" class= "indice">
-      <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();">Colpevole</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="riacetxt" class= "indice">
-      <div onMouseOver="document.getElementById('riacetxt').stop();" onMouseOut="document.getElementById('riacetxt').start();">Riace, villaggio globale </div>
-    </marquee>
-    <br></br>
-
-   <marquee loop="-1" scrollamount="10"  id="ecovietxt" class= "indice">
-      <div onMouseOver="document.getElementById('ecovietxt').stop();" onMouseOut="document.getElementById('ecovietxt').start();">Ecovie</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1" scrollamount="10"  id="eavestxt" class= "indice">
-      <div onMouseOver="document.getElementById('eavestxt').stop();" onMouseOut="document.getElementById('eavestxt').start();">Mrs Eaves</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1" scrollamount="10"  id="steinertxt" class= "indice">
-      <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">Albe Steiner</div>
-    </marquee>
-    <br></br>
-
-    <marquee loop="-1"  scrollamount="10" id="illutxt" class= "indice">
-      <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();">Illustrations </div>
-    </marquee>
-    <br></br>
 
   </div>
 
@@ -527,11 +441,9 @@
   document.getElementById("vicevita_desc").className = "outClass";
   document.getElementById("vicevita_imm").className = "outClass";
   myParagrafo.onmouseover = function() {document.getElementById("vicevita_desc").className = "desc";
-                                        document.getElementById("vicevita_imm").className = "overClass";
-                                        document.getElementById('vicevitatxt').stop(); };
+                                        document.getElementById("vicevita_imm").className = "overClass" };
   myParagrafo.onmouseout  = function() {document.getElementById("vicevita_desc").className = "outClass";
-                                        document.getElementById("vicevita_imm").className = "outClass";
-                                        document.getElementById('vicevitatxt').start(); };
+                                        document.getElementById("vicevita_imm").className = "outClass"; };
 
   var myParagrafo = document.getElementById("colpevoletxt");
   document.getElementById("colpevole_desc").className = "outClass";
