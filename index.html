@@ -60,7 +60,7 @@
        }
        #loading{
          width: 100%;
-         height: 35vw;
+         height: 650px;
          border: 3px solid;
          border-color: white;
          background-color: white;
@@ -99,7 +99,7 @@
        }
 
 
-       .footer{
+       .rights{
          padding-left: 10%;
          padding-right: 10%;
          border:hidden;
@@ -114,10 +114,9 @@
         background-color: transparent;
         border: 3px solid;
         border-color: red;
-        width: 35vw;
-        height: 35vw;
-        min-width: 450px;
-        min-height: 450px;
+        width: 650px;
+        height: 650px;
+
         white-space: nowrap;
         overflow: auto;
         text-align: center;
@@ -131,21 +130,21 @@
         z-index: +1;
       }
       .box::-webkit-scrollbar {
-    display: none;}
-      .indice{
+      display: none;}
+      .titolo{
         font-family:GarI;
         text-align: left;
-        font-size:7vw;
+        font-size:5em;
+        line-height: auto;
+
         cursor: pointer;
         border:hidden;
         margin: 0;
         transform: translate(-50%, 0);
         position: relative;
         left: 50%;
-
-
-       }
-      .fra {
+      }
+      .back {
        font-family: sans-serif;
        font-size: 1.5em;
        float:left;
@@ -153,7 +152,7 @@
        }
 
 
-      .about{
+      .images{
        text-align: right;
        font-family: sans-serif;
        font-size: 1.5em;
@@ -203,15 +202,60 @@
 
       }
 
-      /*mobile!!!!!!*/
-
+      /*mobile!!!!!!!!!!*/
       @media (max-width: 1000px) {
+
+        .loadingbox {
+        width: 10vw;
+        height: 10vw;
+        border: 3px solid;
+        border-color: red;
+        min-width: 175px;
+        min-height: 175px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: +10;
+        }
+        .loadingtxt{
+          font-family:GarI;
+          text-align: left;
+          font-size:8em;
+
+          cursor: default;
+          border:hidden;
+          margin: 0;
+          transform: translate(-50%, -50%);
+          position: relative;
+          left: 50%;
+          top:50%;
+          color:red;
+          z-index: +10;
+         }
+         #loading{
+           width: 100%;
+           height: 650px;
+           border: 3px solid;
+           border-color: white;
+           background-color: white;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+           text-align: center;
+           position: absolute;
+           z-index: +10;
+          }
+
 
         body {
           font-size: 100%;
           overflow: hidden;
+          color: red;
 
         }
+
         ::-moz-selection { /* Code for Firefox */
           color: white;
           background: black;
@@ -229,32 +273,32 @@
           cursor: default;
           border:hidden;
          }
-         .footer{
-          float: center;
+
+         .rights{
+           content: fixed;
+           cursor: default;
            border:hidden;
-           bottom:25px;
+           float: center;
+           bottom:2vh;
            position: absolute;
            font-family: sans-serif;
            font-size: 1em;
-           line-height: 1em;
-           text-align: center;
+           line-height: 0.75em;
            cursor: default;
-
+           text-align: center;
            left:50%;
-           margin-left: var(--mL);
-           margin-top: var(--mT);
+
            transform: translate(-50%,0%);
 
           }
+
         .box{
           background-color: transparent;
-          border: 0px solid #000000;
-          width: 40vh;
-          height: 40vh;
-          white-space: nowrap;
-          overflow: auto;
-          text-overflow: ellipsis;
-          text-align: center;
+          border: 2px solid;
+          border-color: red;
+          width: 39.375vh;   /*16:9*/
+          height: 70vh;
+          overflow:scroll;
           vertical-align: middle;
           top: 50%;
           left:50%;
@@ -262,62 +306,75 @@
           margin-top: var(--mT);
           transform: translate(-50%,-50%);
           position:fixed;
+          z-index: +1;
         }
+
         .box::-webkit-scrollbar {
-      display: none;}
-        .indice{
-          font-family:ortica;
+        display: none;}
+
+        .titolo{
+          font-family:GarI;
           text-align: left;
-          font-size:3em;
-          line-height: auto;
+          font-size:6vh;
           cursor: pointer;
           border:hidden;
           margin: 0;
           transform: translate(-50%, 0);
           position: relative;
           left: 50%;
+
          }
-        .fra {
+         .testo{
+           font-family:Gar;
+           width: 35vh;
+           text-align: left;
+           font-size:3vh;
+           cursor: pointer;
+           border:hidden;
+           margin: 0;
+           transform: translate(-50%, 0);
+           position: relative;
+           left: 50%;
+          }
+        .back {
          font-family: sans-serif;
          font-size: 1em;
          float:center;
          text-align: center;
-         margin-top: 25px;
-
+         margin-top: 2vh;
          }
 
 
-        .about{
-
+        .images{
+         text-align: center;
          font-family: sans-serif;
          font-size: 1em;
-         float:center;
-         text-align: center;
-         margin-top: 25px;
+         float: center;
+         margin-top: 2vh;
+         }
 
-        }
+
+         .desc{visibility: hidden;width: 0px;height: 0px;}
 
 
 
 
          .overClass {visibility: visible;}
-         .outClass  {visibility: hidden;}
+         .outClass  {visibility: hidden;width: 0px;height: 0px;}
+
+          .overClassintro::-webkit-scrollbar {
+          display: none;}
 
 
-          .imm {
-
-            height: 0%;
-            top: 50%;
-            left:50%;
-            margin-left: var(--mL);
-            margin-top: var(--mT);
-            transform: translate(-50%,-50%);
-            position:absolute;
-            z-index: -3;
-            }
+          .imm {visibility: hidden;width: 0px;height: 0px;}
 
 
         }
+
+
+
+
+
 
 
 
@@ -386,7 +443,7 @@
     <!--immagini a comparsa-->
 
     <div id="vicevita_imm">
-      <img src="foto/vicevita444.png" class="imm">
+      <img src="foto/vicevita44.png" class="imm">
     </div>
 
     <div id="colpevole_imm">
@@ -409,31 +466,55 @@
       <img src="foto/riace33.png" class="imm" >
     </div>
 
+    <div id="arbus_imm">
+      <img src="foto/arbus00.png" class="imm" >
+    </div>
+
+    <div id="fellini_imm">
+      <img src="foto/fellini00.png" class="imm" >
+    </div>
+
+
+
       <!--desc a comparsa-->
 
     <div id="vicevita_desc" class="desc">
-       La vicevita, treni e viaggi in treno <br></br> Bachelor thesis project / Editorial design, 2020
+       La vicevita, treni e viaggi in treno <br></br> Bachelor thesis project / PoliMi / 2020
     </div>
 
     <div id="colpevole_desc" class="desc">
-       Colpevole <br></br> Sociology of communication, 2019
+       Colpevole <br></br> Sociology of communication / PoliMi / 2019
     </div>
 
     <div id="riace_desc" class="desc">
-       Riace, villaggio globale <br></br> Content curation / Editorial design, 2018
+       Riace, villaggio globale <br></br> Content curation, editorial design / PoliMi / 2018
     </div>
 
     <div id="mrs_desc" class="desc">
-       Mrs Eaves<br></br> Type specimen, 2020
+       Mrs Eaves<br></br> Type specimen / PoliMi / 2020
     </div>
 
     <div id="steiner_desc" class="desc">
-       Albe Steiner<br></br> Content curation / Editorial design, 2020
+       Albe Steiner, l'impegno<br></br> Content curation, editorial design / PoliMi / 2020
     </div>
 
     <div id="ecovie_desc" class="desc">
-       Ecovie <br></br> Illustrations, 2019
+       Ecovie <br></br> Illustrations / PoliMi / 2019
     </div>
+
+    <div id="arbus_desc" class="desc">
+       Diane Arbus, fotografa di <br></br> Study, editorial design / PoliMi / 2020
+    </div>
+
+    <div id="fellini_desc" class="desc">
+       Federico Fellini, il silenzio dei sogni <br></br> Study, editorial design / PoliMi / 2020
+    </div>
+
+    <!--<div id="illu_desc" class="desc">
+       Sfere <br></br> Illustrations / personal project / 2019-2020
+    </div>-->
+
+
 
 
 
@@ -442,10 +523,10 @@
   <!--HEADER-->
 
     <div id="header" class="header" >
-      <div id="Francesca" class="fra">
+      <div id="Francesca" class="back">
       Francesca Fazzini
       </div>
-      <div class="about">
+      <div class="images">
       <a  style="color:red; text-decoration: underline" >
       Projects
       </a>
@@ -461,48 +542,61 @@
     <br></br><br></br>
     <div class="box">
 
-    <marquee  loop="-1" scrollamount="10"  id="vicevitatxt" class= "indice" >
+    <marquee loop="-1" scrollamount="15"  id="vicevitatxt" class= "titolo" >
     <div onMouseOver="document.getElementById('vicevitatxt').stop();" onMouseOut="document.getElementById('vicevitatxt').start();"><a href="vicevita-photos.html">La vicevita, treni e viaggi in treno
     </a></div>
-   </marquee>
+  </marquee>
     <br></br>
 
-    <marquee loop="-1"  scrollamount="10" id="colpevoletxt" class= "indice">
-      <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();">Colpevole</div>
+    <marquee loop="-1" scrollamount="15" id="colpevoletxt" class= "titolo">
+      <div onMouseOver="document.getElementById('colpevoletxt').stop();" onMouseOut="document.getElementById('colpevoletxt').start();"><a href="colpevole-photos.html">Colpevole
+      </a></div>
     </marquee>
     <br></br>
 
-    <marquee loop="-1"  scrollamount="10" id="riacetxt" class= "indice">
+    <marquee loop="-1" scrollamount="15" id="riacetxt" class= "titolo">
       <div onMouseOver="document.getElementById('riacetxt').stop();" onMouseOut="document.getElementById('riacetxt').start();">Riace, villaggio globale </div>
     </marquee>
     <br></br>
 
-   <marquee loop="-1" scrollamount="10"  id="ecovietxt" class= "indice">
+   <marquee loop="-1" scrollamount="15"  id="ecovietxt" class= "titolo">
       <div onMouseOver="document.getElementById('ecovietxt').stop();" onMouseOut="document.getElementById('ecovietxt').start();">Ecovie</div>
     </marquee>
     <br></br>
 
-    <marquee loop="-1" scrollamount="10"  id="eavestxt" class= "indice">
+    <marquee loop="-1" scrollamount="15"  id="eavestxt" class= "titolo">
       <div onMouseOver="document.getElementById('eavestxt').stop();" onMouseOut="document.getElementById('eavestxt').start();">Mrs Eaves</div>
     </marquee>
     <br></br>
 
-    <marquee loop="-1" scrollamount="10"  id="steinertxt" class= "indice">
-      <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">Albe Steiner</div>
+    <marquee loop="-1" scrollamount="15"  id="steinertxt" class= "titolo">
+      <div onMouseOver="document.getElementById('steinertxt').stop();" onMouseOut="document.getElementById('steinertxt').start();">Albe Steiner, l'impegno </div>
     </marquee>
     <br></br>
 
-    <marquee loop="-1"  scrollamount="10" id="illutxt" class= "indice">
-      <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();">Illustrations </div>
+    <marquee loop="-1" scrollamount="15"  id="arbustxt" class= "titolo">
+      <div onMouseOver="document.getElementById('arbustxt').stop();" onMouseOut="document.getElementById('arbustxt').start();">Diane Arbus, fotografa di</div>
     </marquee>
     <br></br>
+
+    <marquee loop="-1" scrollamount="15"  id="fellinitxt" class= "titolo">
+      <div onMouseOver="document.getElementById('fellinitxt').stop();" onMouseOut="document.getElementById('fellinitxt').start();">Federico Fellini, il silenzio dei sogni</div>
+    </marquee>
+    <br></br>
+
+    <marquee loop="-1" scrollamount="15" id="illutxt" class= "titolo">
+      <div onMouseOver="document.getElementById('illutxt').stop();" onMouseOut="document.getElementById('illutxt').start();"><a href="sfere-photos.html">Sfere </a></div>
+    </marquee>
+    <br></br>
+
+
 
   </div>
 
 
 
 <!--footer-->
-    <div id="footer" class="footer" >
+    <div id="footer" class="rights" >
       All rights reserved <br></br>© Francesca Fazzini 2020
 
     </div>
@@ -574,6 +668,21 @@
   myParagrafo.onmouseout  = function() {document.getElementById("steiner_desc").className = "outClass";
                                         document.getElementById("steiner_imm").className = "outClass"; };
 
+  var myParagrafo = document.getElementById("arbustxt");
+  document.getElementById("arbus_desc").className = "outClass";
+  document.getElementById("arbus_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("arbus_desc").className = "desc";
+                                        document.getElementById("arbus_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("arbus_desc").className = "outClass";
+                                        document.getElementById("arbus_imm").className = "outClass"; };
+
+  var myParagrafo = document.getElementById("fellinitxt");
+  document.getElementById("fellini_desc").className = "outClass";
+  document.getElementById("fellini_imm").className = "outClass";
+  myParagrafo.onmouseover = function() {document.getElementById("fellini_desc").className = "desc";
+                                        document.getElementById("fellini_imm").className = "overClass"; };
+  myParagrafo.onmouseout  = function() {document.getElementById("fellini_desc").className = "outClass";
+                                        document.getElementById("fellini_imm").className = "outClass"; };
 
   var myParagrafo = document.getElementById("illutxt");
   document.getElementById("illu_desc").className = "outClass";
@@ -582,6 +691,9 @@
                                         document.getElementById("illu_imm").className = "overClass"; };
   myParagrafo.onmouseout  = function() {document.getElementById("illu_desc").className = "outClass";
                                         document.getElementById("illu_imm").className = "outClass"; };
+
+
+
 
 
 
